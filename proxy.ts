@@ -21,6 +21,9 @@ export const config = {
         '/',
         '/profile',
         '/login',
-        '/signup'
+        '/signup',
+        '/verifyemail',
+        '/forgotpassword',
+        '/resetpassword'
     ]
 }

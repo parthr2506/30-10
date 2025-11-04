@@ -15,7 +15,7 @@ export default function Profile() {
             router.push("/login")
 
         } catch (error: any) {
-            console.log("Logout Failed", error);
+            // console.log("Logout Failed", error);
             toast.error(error.message)
 
         }
@@ -24,7 +24,7 @@ export default function Profile() {
 
     const getUserDetails = async () => {
         const res = await axios.get("/api/users/details");
-        console.log(res.data)
+        // console.log(res.data)
         setData(res.data.data._id)
 
     }
@@ -41,6 +41,8 @@ export default function Profile() {
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
                 onClick={getUserDetails}
             >Details</button>
+
+            <Link className='text-blue-600 mt-4 hover:text-blue-500 hover:underline' href="/forgotpassword">Forgot Password?</Link>
 
         </div>
     )

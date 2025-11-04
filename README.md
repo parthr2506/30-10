@@ -1,3 +1,5 @@
+This is a fullstack authentication system using nextjs connected next frontend to mongodb to store and retrieve records created signup, login, logout, profile pages used becrypt to hash the password used jsonwebtoken to generated token and store tokens in cookie for authenticated users made middlewares/proxy for protected routes
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
